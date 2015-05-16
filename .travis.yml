@@ -1,12 +1,12 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 1.9.3
+  - 2.1.0
+  - 2.2.0
 branches:
   only:
-    - testing
+    - master
 env:
-  - REDMINE_VERSION=2.3.3 VERBOSE=yes
+  - REDMINE_VERSION=3.0.3 VERBOSE=yes
 script:
   - export PLUGIN=<add plugin name here>
   - export WORKSPACE=$(pwd)/workspace
